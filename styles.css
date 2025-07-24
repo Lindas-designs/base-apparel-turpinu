@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  /* Primary */
+  --pink-400: hsl(0, 36%, 70%);
+  --red-500: hsl(0, 93%, 68%);
+  /* Neutral */
+  --gray-900: hsl(0, 6%, 24%);
+  /* Gradients */
+  --gradient-primary: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+
+  --gradient-secondary: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%),
+    hsl(0, 74%, 74%)
+  );
+  --gradient-tertiary: linear-gradient(
+    135deg,
+    hsl(0, 42%, 57%),
+    hsl(0, 59%, 38%)
+  );
+}
+html {
+  font-family: "Josefin Sans", sans serif;
+  /* font-weight: 600; */
+  /* - Weights: 300, 400, 600 */
+}
+html,
+body {
+  margin: 0;
+}
+body {
+  font-size: 16px;
+  position: fixed;
+}
+.main {
+  display: flex;
+  height: 100vh;
+  background-image: var(--gradient-primary);
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10vw;
+  margin-top: 3vh;
+  margin-left: 10vw;
+}
+.logo-img {
+  width: 10rem;
+}
+h1 {
+  padding-top: 5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: var(--gray-900);
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  max-width: fit-content;
+}
+.highlight {
+  color: var(--pink-400);
+}
+.heavy {
+  font-weight: 600;
+}
+p {
+  color: var(--pink-400);
+  line-height: 1.6rem;
+  margin-top: 0;
+}
+.email_form {
+  position: relative;
+}
+.input {
+  height: 3rem;
+  border-radius: 2rem;
+  width: 80%;
+  border: 0.1rem solid var(--pink-400);
+  background-color: var(--gradient-primary);
+  outline: none;
+  caret-color: var(--pink-400);
+  padding-left: 2rem;
+  font-size: 1.2rem;
+  color: var(--pink-400);
+}
+.input:focus {
+  border: 0.1rem solid var(--red-500);
+  height: 3rem;
+}
+.input::placeholder {
+  color: var(--pink-400);
+  font-weight: 300;
+  font-family: "Josefin Sans";
+}
+.error-img {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hidden {
+  opacity: 0;
+}
+.error-message {
+  display: block;
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+.btn {
+  position: absolute;
+  background-image: var(--gradient-secondary);
+  height: 100%;
+  width: 6rem;
+  border-radius: 2rem;
+  left: 80%;
+  transform: translate(-50%, 0);
+  border: 0.1rem solid var(--pink-400);
+}
+.btn:hover,
+.btn:active {
+  background-image: var(--gradient-tertiary);
+}
+.hero-container {
+  /* width: 100rem; */
+}
+.hero-img {
+  max-height: 100%;
+  width: fit-content;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
