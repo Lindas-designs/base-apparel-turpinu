@@ -86,12 +86,12 @@ p {
   outline: none;
   caret-color: var(--pink-400);
   padding-left: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: var(--pink-400);
 }
 .input:focus {
   border: 0.1rem solid var(--red-500);
-  height: 6rem;
+  height: 5.5rem;
 }
 .input::placeholder {
   color: var(--pink-400);
@@ -135,6 +135,8 @@ p {
 .hero-img {
   max-height: 100%;
   width: fit-content;
+  /* background-position: center;
+  background-size: contain; */
 }
 
 .attribution {
