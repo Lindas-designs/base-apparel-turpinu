@@ -29,13 +29,14 @@ html {
   font-family: "Josefin Sans", sans serif;
   /* font-weight: 600; */
   /* - Weights: 300, 400, 600 */
+  font-size: 62.5%;
 }
 html,
 body {
   margin: 0;
 }
 body {
-  font-size: 16px;
+  font-size: 1.5rem;
   position: fixed;
 }
 .main {
@@ -46,20 +47,20 @@ body {
 .info {
   display: flex;
   flex-direction: column;
-  margin-right: 20vw;
+  margin-right: 25vw;
   margin-top: 3vh;
   margin-left: 10vw;
 }
 .logo-img {
-  width: 10rem;
+  width: 15rem;
 }
 h1 {
-  padding-top: 5rem;
+  padding-top: 8rem;
   text-transform: uppercase;
   font-weight: 300;
   color: var(--gray-900);
-  font-size: 4rem;
-  letter-spacing: 1rem;
+  font-size: 6rem;
+  letter-spacing: 2rem;
   flex-shrink: 2;
 }
 .highlight {
@@ -70,16 +71,16 @@ h1 {
 }
 p {
   color: var(--pink-400);
-  line-height: 1.6rem;
-  margin-top: 0;
+  line-height: 2.5rem;
+  margin-top: 1rem;
 }
 .email_form {
   position: relative;
 }
 .input {
-  height: 3rem;
-  border-radius: 2rem;
-  width: 80%;
+  height: 5.5rem;
+  border-radius: 4rem;
+  width: 90%;
   border: 0.1rem solid var(--pink-400);
   background-color: var(--gradient-primary);
   outline: none;
@@ -90,7 +91,7 @@ p {
 }
 .input:focus {
   border: 0.1rem solid var(--red-500);
-  height: 3rem;
+  height: 6rem;
 }
 .input::placeholder {
   color: var(--pink-400);
@@ -117,15 +118,18 @@ p {
   position: absolute;
   background-image: var(--gradient-secondary);
   height: 100%;
-  width: 6rem;
-  border-radius: 2rem;
-  left: 80%;
+  width: 10rem;
+  border-radius: 5rem;
+  left: 90%;
   transform: translate(-50%, 0);
   border: 0.1rem solid var(--pink-400);
+  box-shadow: 0.1rem 0.3rem 1rem var(--gray-900);
 }
 .btn:hover,
 .btn:active {
   background-image: var(--gradient-tertiary);
+  cursor: pointer;
+  box-shadow: 0.1rem 0.3rem 2rem var(--gray-900);
 }
 
 .hero-img {

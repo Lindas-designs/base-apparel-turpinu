@@ -66,6 +66,14 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
+Probably should always start my css with
+
+```css
+html {
+  font-size: 62.5%;
+}
+```
+
 Creating input forms
 
 ```html
@@ -128,6 +136,8 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 ### Continued development
 
 Need to learn more about image positioning!
+Working with images and making them responsive to the viewport
+Clearing input fields, so the user sees update.
 
 <!--  -->
 
