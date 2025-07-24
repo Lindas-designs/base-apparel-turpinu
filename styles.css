@@ -46,7 +46,7 @@ body {
 .info {
   display: flex;
   flex-direction: column;
-  margin-right: 10vw;
+  margin-right: 20vw;
   margin-top: 3vh;
   margin-left: 10vw;
 }
@@ -60,7 +60,7 @@ h1 {
   color: var(--gray-900);
   font-size: 4rem;
   letter-spacing: 1rem;
-  max-width: fit-content;
+  flex-shrink: 2;
 }
 .highlight {
   color: var(--pink-400);
@@ -110,6 +110,7 @@ p {
   display: block;
   padding-top: 1rem;
   padding-left: 2rem;
+  color: var(--red-500);
 }
 
 .btn {
@@ -126,9 +127,7 @@ p {
 .btn:active {
   background-image: var(--gradient-tertiary);
 }
-.hero-container {
-  /* width: 100rem; */
-}
+
 .hero-img {
   max-height: 100%;
   width: fit-content;
